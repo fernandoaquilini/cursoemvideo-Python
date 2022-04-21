@@ -1,0 +1,7 @@
+dist = float(input('Digite a distância em METROS: '))
+print('A distância {}m em {:<11} é {}km.'.format(dist, 'quilômetros', dist / 1000))
+print('A distância {}m em {:<11} é {}hm.'.format(dist, 'hectômetros', dist / 100))
+print('A distância {}m em {:<11} é {}dam.'.format(dist, 'decâmetros', dist / 10))
+print('A distância {}m em {:<11} é {}dm.'.format(dist, 'decímetros', dist * 10))
+print('A distância {}m em {:<11} é {}cm.'.format(dist, 'centímetros', dist * 100))
+print('A distância {}m em {:<11} é {}mm.'.format(dist, 'milímetros', dist * 1000))
