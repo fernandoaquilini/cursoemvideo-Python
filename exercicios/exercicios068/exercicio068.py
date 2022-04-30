@@ -1,10 +1,13 @@
 from random import randint
-derrota = False
 contador = 0
 while True:
-    computadorN = randint(0, 1000)
+    computadorN = randint(0, 10)
     jogadorN = int(input('\nDigita o valor: '))
-    jogadorO = str(input('Par ou Ímpar [P/I]: ')).strip().upper()[0]
+    while True:
+        jogadorO = str(input('Par ou Ímpar [P/I]: ')).strip().upper()[0]
+        if jogadorO in 'PI':
+            break
+    # print(f'Você: {jogadorN} + Comp: {computadorN} = {jogadorN + computadorN}.')
     if (computadorN + jogadorN) % 2 == 0:
         if jogadorO in 'P':
             print('-'*30)
